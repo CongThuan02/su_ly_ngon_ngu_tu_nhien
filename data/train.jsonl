@@ -1,0 +1,8 @@
+{"text":"sang mai luc 7h30 co cuoc hop tai phong hop tang 3 voi doi tac cua g-solutions","entities":[{"start":21,"end":29,"label":"TASK"},{"start":34,"end":50,"label":"LOCATION"},{"start":67,"end":78,"label":"PARTNER"}]}
+{"text":"9h sang thu 2 tuan sau hop du an alpha tai phong a voi cong ty an binh","entities":[{"start":23,"end":38,"label":"TASK"},{"start":43,"end":50,"label":"LOCATION"},{"start":55,"end":70,"label":"PARTNER"}]}
+{"text":"chieu mai 14h gap khach hang seatech tai van phong quan 1","entities":[{"start":14,"end":28,"label":"TASK"},{"start":41,"end":57,"label":"LOCATION"},{"start":29,"end":36,"label":"PARTNER"}]}
+{"text":"ngay 15/04 luc 10h demo san pham tai phong meeting 2 voi blue ocean","entities":[{"start":19,"end":32,"label":"TASK"},{"start":37,"end":52,"label":"LOCATION"},{"start":57,"end":67,"label":"PARTNER"}]}
+{"text":"toi nay luc 19h an toi voi doi tac sunrise holdings tai nha hang song viet","entities":[{"start":16,"end":22,"label":"TASK"},{"start":35,"end":51,"label":"PARTNER"},{"start":56,"end":74,"label":"LOCATION"}]}
+{"text":"sang thu 6 bao cao tien do voi khach hang acme tai phong du an tang 5","entities":[{"start":11,"end":26,"label":"TASK"},{"start":42,"end":46,"label":"PARTNER"},{"start":51,"end":69,"label":"LOCATION"}]}
+{"text":"mai luc 8h30 co buoi lam viec voi tap doan minh phat tai tru so chinh","entities":[{"start":16,"end":29,"label":"TASK"},{"start":34,"end":52,"label":"PARTNER"},{"start":57,"end":69,"label":"LOCATION"}]}
+{"text":"thu 4 luc 16h review hop dong voi g-solutions tai phong hop lon","entities":[{"start":14,"end":29,"label":"TASK"},{"start":34,"end":45,"label":"PARTNER"},{"start":50,"end":63,"label":"LOCATION"}]}
