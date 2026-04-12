@@ -52,6 +52,22 @@ model.eval()
 logger.info("Model sẵn sàng.")
 
 # ── Inference ─────────────────────────────────────────────────────────────────
+def _get_word_ids(tokens: list[str], n: int) -> list:
+    """
+    Tính word_ids thủ công cho non-fast tokenizer (PhoBERT / SentencePiece).
+    n = số vị trí cần trả về (bằng độ dài logits).
+    """
+    word_ids = [None]  # [CLS]
+    for word_idx, word in enumerate(tokens):
+        sub = tokenizer.tokenize(word) or [tokenizer.unk_token]
+        word_ids.extend([word_idx] * len(sub))
+        if len(word_ids) >= n - 1:
+            break
+    word_ids.append(None)  # [SEP]
+    word_ids += [None] * (n - len(word_ids))
+    return word_ids[:n]
+
+
 def predict(text: str) -> dict:
     """Nhận văn bản đã chuẩn hoá, trả về entities."""
     tokens = text.split()
@@ -66,7 +82,7 @@ def predict(text: str) -> dict:
         outputs = model(**enc)
 
     preds    = torch.argmax(outputs.logits[0], dim=-1).tolist()
-    word_ids = enc.word_ids()
+    word_ids = _get_word_ids(tokens, len(preds))
 
     word_preds, prev = [], None
     for pid, wid in zip(preds, word_ids):
