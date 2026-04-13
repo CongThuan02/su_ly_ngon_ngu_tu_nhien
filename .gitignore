@@ -1,13 +1,1 @@
-# Model output
-model_output/
 
-# Database
-*.db
-
-# Firebase credentials (KHÔNG commit file này lên git)
-firebase_credentials.json
-
-# Python
-__pycache__/
-*.pyc
-.env
